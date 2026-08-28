@@ -40,3 +40,18 @@ settings.json.tmp
 
 .boardown/
 manager/
+
+# Local secret backups (never commit)
+.env.backup.*
+.env.bak.*
+.env.pre-fix.*
+data/.env
+data/.env.bak.*
+
+# Local operational/tooling state
+.omo/
+backups/
+
+# Host-specific settings snapshots
+settings.json.host
+settings.json.bak.host

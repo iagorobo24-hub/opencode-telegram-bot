@@ -14,12 +14,9 @@ services:
     env_file:
       - .env
     volumes:
-      - opencode-bot-data:/app/data
+      - ./data:/app/data
     logging:
       driver: "json-file"
       options:
         max-size: "10m"
         max-file: "5"
-
-volumes:
-  opencode-bot-data:
